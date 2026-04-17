@@ -6,6 +6,8 @@
 # to the new NASA OPeNDAP servers.   ----> esperar y buscar alternativas
 # Explorar alternativa MODISTools
 system("git status")
+usethis::use_git_config(user.name = "jfmas", user.email = "jfmas@ciga.unam.mx")
+usethis::use_github()
 ###########################################################
 ### MODISFAST (imagenes and productos MODIS)
 # Instalación de modisfast
