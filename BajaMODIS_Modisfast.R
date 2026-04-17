@@ -3,8 +3,9 @@
 
 # 2025-09-17 : IMPORTANT NOTIFICATION : Due to major recent migrations of NASA’s servers (details here), 
 # modisfast will be temporarily unavailable in the coming months. Work is in progress to connect modisfast 
-# to the new NASA OPeNDAP servers.
+# to the new NASA OPeNDAP servers.   ----> esperar y buscar alternativas
 
+system("git status")
 ###########################################################
 ### MODISFAST (imagenes and productos MODIS)
 # Instalación de modisfast
