@@ -7,27 +7,23 @@
 library(pak)
 # # pak("zivankaraman/CDSE")
 
+##### REGISTRARSE y CREAR token
+# https://shapps.dataspace.copernicus.eu/dashboard/#/account/settings 
+# Login o register
+# En account settings create OAuth clients
+
+
 
 # Librerías
 library(CDSE)
 library(sf)
 library(terra)
-id <- "sh-ce2e1cf4-8ccc-40ee-8db6-ad545e147160"
-secret <-  "75jnZY496FPiwP07zo1iHtR1ijhJpeEh"
+# # Aqui poner sus propias credenciales
+id <- "sh-9887994d-1281-4ce3-94b5-7ac39ac01efb"
+secret <-  "SQOGCR9VVywfp4JoV4nkdtx5NzA7Vtzo"
 
 token <- GetOAuthToken(id = id, secret = secret)
 OAuthClient <- GetOAuthClient(id = id, secret = secret)
-
-# # Librerías
-# library(CDSE)
-# library(sf)
-# library(terra)
-# # Aqui poner sus propias credenciales
-# id <- "sh-ce2e1cf4-8cac-40ee-8db6-ad545e147161"
-# secret <-  "79jnZY496FPiwP07zo1iHtR1jjhJpeEh"
-# 
-# token <- GetOAuthToken(id = id, secret = secret)
-# OAuthClient <- GetOAuthClient(id = id, secret = secret)
 
 ## Area de interés ROI (Presa Solís)
 caja <- st_bbox(c(xmin = -100.68, xmax = -100.483, ymin = 20.023, ymax = 20.13),
